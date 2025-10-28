@@ -8,7 +8,7 @@ Using multilingual NLP and event-study econometrics, it quantifies how authentic
 
 ---
 
-### � Tech Stack & Rationale
+###  Tech Stack & Rationale
 - **Python** (pandas, scikit-learn, transformers) — preprocessing, feature engineering, and machine learning models.  
 - **R** (tidyverse, sandwich, eventstudies) — econometric modeling, robust regression, and event-study analysis.  
 - **RoBERTa (Hugging Face)** — transformer-based sentiment model for multilingual and complex text.  
@@ -25,7 +25,7 @@ Synthetic samples are included for reproducibility.
 
 ---
 
-### 🔍 Highlights
+###  Highlights
 - **Authentic ESG ads → higher consumer trust**  
 - **Positive sentiment** around campaigns predicts **short-term abnormal returns**  
 - **Platform effect:** Twitter shows stronger sentiment volatility than YouTube  
