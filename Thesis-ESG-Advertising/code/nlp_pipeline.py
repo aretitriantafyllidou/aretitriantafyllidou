@@ -39,7 +39,7 @@ def clean(txt: str) -> str:
 
 df["clean"] = df["text"].apply(clean)
 
-# language detect
+# language detection
 def safe_detect(txt):
     try:
         return detect(txt)
@@ -48,7 +48,7 @@ def safe_detect(txt):
 
 df["lang"] = df["clean"].apply(safe_detect)
 
-# translation (NLLB)
+# translation with NLLB
 from transformers import pipeline as hf_pipe
 translator = hf_pipe(
     task="translation",
@@ -85,7 +85,7 @@ sent_out = sent_clf(df["clean_en"].tolist(), batch_size=32)
 df["roberta_sentiment"] = [o["label"].lower() for o in sent_out]
 df["sent_score"] = [o["score"] for o in sent_out]
 
-# zero-shot classification for neutral comments
+# zeroshot classification for neutral comments
 zs_clf = pipeline(
     "zero-shot-classification",
     model="facebook/bart-large-mnli",
