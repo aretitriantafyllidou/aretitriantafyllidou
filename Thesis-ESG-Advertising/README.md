@@ -3,7 +3,7 @@
 **Master’s Thesis – Erasmus University Rotterdam (2025)**  
 **Author:** Areti Triantafyllidou  
 
-This project explores how **ESG-focused advertising campaigns** influence both **consumer sentiment** and **financial market reactions**.  
+This project explores how Environmental, Social and Governance focused advertising, campaigns influence both consumer sentiment and financial market reactions.  
 Using multilingual NLP and event-study econometrics, it quantifies how authentic, socially responsible communication impacts trust and market performance.
 
 ---
