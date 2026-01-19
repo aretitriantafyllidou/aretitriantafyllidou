@@ -9,7 +9,21 @@ I’m a recent graduate in Data Science and Marketing Analytics, based in the Ne
 ---
 ##  Projects
 
-### [ESG Adveritising Social Media and Financial Analysis (Thesis)]()
+### Thesis: [ESG Adveritising Social Media and Financial Analysis]()
+
+**Title:** The impact of ESG advertising on consumer perception and brand trust  
+
+**Summary:**  
+For my Master’s thesis, I studied how Environmental, Social, and Governance(ESG) related advertising affects public sentiment in social media and stock market performance. The analysis was conducted using social media and financial data I collected by myself using APIs and authetication keys. 
+
+**Tools & Methods:**  
+Python (Pandas, NumPy, Scikit-learn, Seaborn, Transformers – RoBERTa, BART) ·  
+R (quantmod, lm) · APIs (YouTube, Twitter) · Event Study Analysis · Sentiment Analysis · NLP · Financial Modelling
+
+**Keywords:** Sentiment Analysis · ESG · Finance · Machine Learning 
+
+🔗 [View folder →](./Thesis-ESG-Advertising)
+
 
 For my Master’s thesis, I studied how Environmental, Social, and Governance(ESG) related advertising affects public sentiment in social media and stock market performance. For this project I collected social media data myself using APIs and authentication keys, cleaned and processed the data, and performed sentiment analysis using  machine learning models in Python.
 To examine the financial impact of it, I conducted a financial event study with data i collected from Yahoo Finance, and then I analyzed abnormal stock returns around ESG-related events.
