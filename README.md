@@ -1,32 +1,40 @@
 # Portfolio
 
-#  Hi, I'm Areti Triantafyllidou  
+#  Hi, I'm Areti  
 
  MSc Data Science & Marketing Analytics – Erasmus University Rotterdam  
  Based in Rotterdam | Passionate about Data, Marketing, and Creativity  
 
 Welcome to my portfolio!  
-Here you’ll find a selection of my projects combining **data analytics, storytelling, and business insight**.
+I am a graduate in Data Science and Marketing analytics. Here you’ll find a selection of data science projects I have worked on.
 
 ---
-##  Featured Projects
+##  Projects
 
-### [ESG Advertising Analysis (Thesis)]()
-Explored the impact of ESG-themed campaigns on consumer trust and stock performance using sentiment analysis (RoBERTa, NRC) and event study methodology in R.
+### [ESG Adveritising Social Media and Financial Analysis  (Thesis)]()
 
-### [UNICEF Case Study]()
-Developed predictive analytics to identify education inequality patterns using SQL, R, and Power BI dashboards.
+For my Master’s thesis, I studied how Environmental, Social, and Governance(ESG) related advertising affects public sentiment in social media and stock market performance. For this project I collected social media data myself using APIs and authentication keys, cleaned and processed the data, and performed sentiment analysis using  machine learning models in Python.
+To examine the financial impact of it, I conducted a financial event study with data i collected from Yahoo Finance, and then I analyzed abnormal stock returns around ESG-related events.
 
-### [Retail Analytics – SQL + Power BI]()
-Analyzed consumer purchasing behavior, optimized dashboards, and generated insights for marketing decisions.
+### [UNICEF Social Media Case Study]()
 
-###  [Social Media Engagement Study]()
-Studied emotional tone, color framing, and engagement metrics across social media posts using Python and visualization techniques.
+This was a two-month case study in collaboration with UNICEF, using real social media data that organization provided to our team.
+We analyzed social media content and engagement to see which posts perform best and how they are perceived across different platforms. Some topics that we focused on were image color schemes, captions, messaging, and user engagement data.
+Based on the analysis, we presented and proposed recommendations on how UNICEF could strengthen and optimize its social media.
+
+### [Music Streaming Analytics Project]()
+
+This project was part of a two-month program following coursework in Data Engineering and Business Intelligence. As a final assignment, we worked on a self-directed project in collaboration with a company in the music streaming industry, using large-scale music consumption data, using SQL for data preparation and querying and Power BI for visualization. The results were presented through interactive dashboards and data-driven insights
+
+###  [Predicting Obesity Levels (Machine Learning Project)]()
+
+In this project, I developed a predictive model to estimate obesity levels using health and lifestyle data from kaggle.
+I cleaned and preprocessed the dataset, engineered features, and I applied supervised machine learning algorithms ( such as Random Forest, Gradiant Boosting, Logistic Regression) to predict individual obesity risk. 
 
 ---
 
 ##  Skills
-Python | R | SQL | Power BI | Looker Studio | NLP | Sentiment Analysis | Machine Learning | Data Visualization | Marketing Analytics  
+Python | R | SQL | Power BI | Sentiment Analysis | Machine Learning | Data Visualization | Marketing Analytics  
 
 ---
 
