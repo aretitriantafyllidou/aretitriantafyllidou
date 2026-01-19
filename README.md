@@ -1,15 +1,15 @@
 # Portfolio
 
-#  Hi, I'm Areti  
+#  Hi, I'm Areti 👋 
 
 Welcome to my portfolio!
-I am a graduate in Data Science and Marketing analytics. I am passionate about working with data and how infrortmation can provide interesting discoveries to help us improve and grow. Here you’ll find a selection of data science projects I have worked on.
+I’m a Data Science & Marketing Analytics MSc graduate based in the Netherlands. I am passionate about working with data and how infrortmation can provide interesting discoveries to help us improve and grow. Here you’ll find a selection of data science projects I have worked on.
 
 
 ---
 ##  Projects
 
-### [ESG Adveritising Social Media and Financial Analysis  (Thesis)]()
+### [ESG Adveritising Social Media and Financial Analysis (Thesis)]()
 
 For my Master’s thesis, I studied how Environmental, Social, and Governance(ESG) related advertising affects public sentiment in social media and stock market performance. For this project I collected social media data myself using APIs and authentication keys, cleaned and processed the data, and performed sentiment analysis using  machine learning models in Python.
 To examine the financial impact of it, I conducted a financial event study with data i collected from Yahoo Finance, and then I analyzed abnormal stock returns around ESG-related events.
@@ -37,4 +37,4 @@ Python | R | SQL | Power BI | Sentiment Analysis | Machine Learning | Data Visua
 ---
 
 📫 **Connect with me:**  
-[LinkedIn](https://www.linkedin.com/in/areti-triantafyllidou/) | [Email](mailto:aretitriantafullidou@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/areti-triantafyllidou/) | [Email](mailto:areti.triantafullidou@gmail.com)
