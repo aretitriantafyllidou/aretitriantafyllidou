@@ -3,7 +3,7 @@
 #  Hi, I'm Areti  
 
 Welcome to my portfolio!
-I am a graduate in Data Science and Marketing analytics. I am passionate about working with data and how infrortmation can provide intersting discoveries to help us iprove and grow. Here you’ll find a selection of data science projects I have worked on.
+I am a graduate in Data Science and Marketing analytics. I am passionate about working with data and how infrortmation can provide interesting discoveries to help us improve and grow. Here you’ll find a selection of data science projects I have worked on.
 
 
 ---
