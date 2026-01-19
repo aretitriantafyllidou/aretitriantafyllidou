@@ -22,7 +22,7 @@ R (quantmod, lm) · APIs (YouTube, Twitter) · Event Study Analysis · Sentiment
 
 **Keywords:** Sentiment Analysis · ESG · Finance · Machine Learning 
 
-🔗 [View folder →](./Thesis-ESG-Advertising)
+ [View folder →](./Thesis-ESG-Advertising)
 
 
 For my Master’s thesis, I studied how Environmental, Social, and Governance(ESG) related advertising affects public sentiment in social media and stock market performance. For this project I collected social media data myself using APIs and authentication keys, cleaned and processed the data, and performed sentiment analysis using  machine learning models in Python.
