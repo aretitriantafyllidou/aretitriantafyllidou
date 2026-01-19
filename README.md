@@ -2,11 +2,9 @@
 
 #  Hi, I'm Areti  
 
- MSc Data Science & Marketing Analytics – Erasmus University Rotterdam  
- Based in Rotterdam | Passionate about Data, Marketing, and Creativity  
+Welcome to my portfolio!
+I am a graduate in Data Science and Marketing analytics. I am passionate about working with data and how infrortmation can provide intersting discoveries to help us iprove and grow. Here you’ll find a selection of data science projects I have worked on.
 
-Welcome to my portfolio!  
-I am a graduate in Data Science and Marketing analytics. Here you’ll find a selection of data science projects I have worked on.
 
 ---
 ##  Projects
