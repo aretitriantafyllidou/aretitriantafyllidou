@@ -1,36 +1,48 @@
-#  ESG Advertising & Market Reactions
+#  ESG Communication, Trust & Financial Performance
 
 **Master’s Thesis – Erasmus University Rotterdam (2025)**  
 **Author:** Areti Triantafyllidou  
+**Supervisor:** Lars Gemmer  
+**Completion:** October 2025
 
-This project explores how Environmental, Social and Governance focused advertising, campaigns influence both consumer sentiment and financial market reactions.  
-Using multilingual NLP and event-study econometrics, it quantifies how authentic, socially responsible communication impacts trust and market performance.
+For my Master’s thesis, I investigated how Environmental, Social, and Governance (ESG) communication campaigns influence consumer trust on social media and short-term stock performance.
 
----
-
-###  Tech Stack & Rationale
-- **Python** (pandas, scikit-learn, transformers) — preprocessing, feature engineering, and machine learning models.  
-- **R** (tidyverse, sandwich, eventstudies) — econometric modeling, robust regression, and event-study analysis.  
-- **RoBERTa (Hugging Face)** — transformer-based sentiment model for multilingual and complex text.  
-- **Zero-shot classification (Hugging Face)** — label detection for purchase intent and ESG theme without manual annotation.  
-- **yfinance / quantmod** — financial data extraction and CAR/BHAR computation.  
-- **Power BI / Looker Studio** — interactive visualization and dashboarding.  
+This analysis applies data science, machine learning and finance techniques in real-world marketing campaigns. For the data, I collected thousands of social media comments from YouTube and Twitter via API authentication, processed them and applied sentiment analysis and purchase-intent detection NLP models (RoBERTa, BART). Then i measured Financial performance with abnormal returns around ESG launch dates, using stock price data from Yahoo Finance.
 
 ---
 
-###  Data Collection
-Public engagement data were scraped from **YouTube** and **Twitter** campaigns through a combination of official APIs and automated collection tools.  
-All comments were **anonymized** and **aggregated** to ensure privacy.  
-Synthetic samples are included for reproducibility.  
+###  Key Methodology:
+
+- Identifying the appropriate advertising
+- Data Collection via APIs (YouTube, Twitter)
+- Text Cleaning, Translation & NLP Preprocessing  
+- Sentiment Classification using RoBERTa and BART Transformers  
+- Event Study Analysis (CAR, BHAR)  
+- Cross-sectional Regressions & Hypothesis Testing (OLS, ANOVA)  
+- Visualization of Campaign Outcomes 
+
+---
+
+
+### Tools & Tech Stack
+Python (Pandas, Scikit-learn, Transformers – RoBERTa, BART) — preprocessing, feature engineering, and machine learning modeling.  
+R (quantmod, lm, eventstudies) — econometric modeling, robust regression, and event study analysis.  
+APIs (YouTube, Twitter) · yfinance — social media and financial data collection.  
+NLP · Sentiment Analysis · Zero-shot Classification · Event Study Analysis — methods used for text classification and campaign impact evaluation.
 
 ---
 
 ###  Highlights
-- **Authentic ESG ads → higher consumer trust**  
-- **Positive sentiment** around campaigns predicts **short-term abnormal returns**  
-- **Platform effect:** Twitter shows stronger sentiment volatility than YouTube  
-- **Greenwashing risk** weakens market reactions  
-- **Stakeholder alignment** amplifies the ESG–performance link  
+
+**Results summary:**  
+Environmental campaigns generally received the most positive public sentiment.  
+Governance messages tended to trigger higher skepticism.  
+ESG advertising had no short-term stock impact, but authenticity strongly influenced consumer trust
+
+
+###  Data Collection
+Public engagement data were scraped from YouTube and Twitter campaigns through a combination of official APIs and automated collection tools.  
+All comments were anonymized and aggregated to ensure privacy.  
 
 ---
 
