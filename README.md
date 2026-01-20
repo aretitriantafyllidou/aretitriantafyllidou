@@ -25,9 +25,6 @@ R (quantmod, lm) · APIs (YouTube, Twitter) · Event Study Analysis · Sentiment
  [View folder →](./Thesis-ESG-Advertising)
 
 
-For my Master’s thesis, I studied how Environmental, Social, and Governance(ESG) related advertising affects public sentiment in social media and stock market performance. For this project I collected social media data myself using APIs and authentication keys, cleaned and processed the data, and performed sentiment analysis using  machine learning models in Python.
-To examine the financial impact of it, I conducted a financial event study with data i collected from Yahoo Finance, and then I analyzed abnormal stock returns around ESG-related events.
-
 ### [UNICEF Social Media Case Study]()
 
 This was a two-month case study in collaboration with UNICEF, using real social media data that organization provided to our team.
