@@ -16,11 +16,8 @@ I’m a recent graduate in Data Science and Marketing Analytics, based in the Ne
 **Summary:**  
 For my Master’s thesis, I studied how Environmental, Social, and Governance(ESG) related advertising affects public sentiment in social media and stock market performance. The analysis was conducted using social media and financial data I collected by myself using APIs and authetication keys. 
 
-**Tools & Methods:**  
-Python (Pandas, NumPy, Scikit-learn, Seaborn, Transformers – RoBERTa, BART) ·  
-R (quantmod, lm) · APIs (YouTube, Twitter) · Event Study Analysis · Sentiment Analysis · NLP · Financial Modelling
+**Tools & Methods:**  Python · R · API Integration · Event Study Analysis · Machine Learning · Sentiment Analysis · NLP · Financial Modelling
 
-**Keywords:** Sentiment Analysis · ESG · Finance · Machine Learning 
 
  [View folder →](./Thesis-ESG-Advertising)
 
