@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import os
 
 # Load dataset from CSV
-file_path = "/Users/rensvanlaarhoven/Desktop/Masters/block 3/data files/social_media_postings.csv"  # Replace with your file path
+file_path = "/Users/aretitriantafyllidou/Desktop/Masters/block 3/data files/social_media_postings.csv"  # Replace with your file path
 data = pd.read_csv(file_path)
 
 
@@ -56,6 +56,6 @@ for index, row in data.iterrows():
         data.at[index, "photo_file"] = "NA"  # Mark as NA if download failed
 
 # Save the updated dataset to a new CSV file
-output_file_path = "/Users/rensvanlaarhoven/Desktop/Masters/block 3/data files/social_media_postings_with_photos.csv"
+output_file_path = "/Users/aretitriantafyllidou/Desktop/Masters/block 3/data files/social_media_postings_with_photos.csv"
 data.to_csv(output_file_path, index=False)
 print(f"Updated dataset saved to {output_file_path}")
