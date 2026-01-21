@@ -6,7 +6,7 @@ This project analyzes 1,645 social media posts from UNICEF Netherlands to identi
 ---
 
 **Tech Stack**  
- R • Random Forest • Linear Regression • Power BI • Python (color & luminance extraction)
+ R • Random Forest • Linear Regression • Python (color & luminance extraction)
 
 ---
 
