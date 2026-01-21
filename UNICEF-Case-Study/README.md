@@ -19,7 +19,7 @@ This project analyzes 1,645 social media posts from UNICEF Netherlands to identi
 ---
 
 **Repository Guide**  
-- 📁 `docs/` → [Slides (PDF)](../docs/UNICEF_presentation.pdf) • [Final Report (PDF)](../docs/Unicef Report.pdf)  
+- 📁 `docs/` → [Slides (PDF)](../docs/UNICEF_presentation.pdf) • [Final Report (PDF)](../docs/UnicefReport.pdf)  
 - 📁 `code/` → R/Python scripts for data prep, feature engineering, and modeling  
 - 📁 `docs/figures/` → Feature importance and partial dependence plots  
 - 📁 `sample_data/` → Synthetic sample + data schema (real UNICEF NL data not shared)
