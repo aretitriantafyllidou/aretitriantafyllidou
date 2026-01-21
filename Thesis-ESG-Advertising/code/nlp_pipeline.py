@@ -13,18 +13,17 @@ import seaborn as sns
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 DetectorFactory.seed = 0
 
-INPUT_CSV = os.getenv("INPUT_CSV", "sample_data/synthetic_ads.csv")
-OUTPUT_CSV = os.getenv("OUTPUT_CSV", "newdataset.csv")
+
 
 #data
-df = pd.read_csv(INPUT_CSV)
+df = pd.read_csv("campaign_comments.csv")
 
 if "text" not in df.columns:
     raise ValueError("Input CSV must contain a 'text' column.")
 if "likes" not in df.columns:
     df["likes"] = 0
 
-# cleaning
+# text cleaning
 URL_RE = re.compile(r"http\\S+")
 USER_RE = re.compile(r"@\\w+")
 
@@ -42,13 +41,16 @@ df["clean"] = df["text"].apply(clean)
 # language detection
 def safe_detect(txt):
     try:
-        return detect(txt)
+        return detect(txt) if txt.strip() else "unknown"
     except:
         return "unknown"
 
 df["lang"] = df["clean"].apply(safe_detect)
 
-# translation with NLLB
+lang_dist = df["lang"].value_counts()
+print(lang_dist.head())
+
+# translation to english with NLLB
 from transformers import pipeline as hf_pipe
 translator = hf_pipe(
     task="translation",
@@ -103,6 +105,8 @@ def classify_sentiment_zs(text):
         return out["labels"][0].lower()
     except:
         return "unknown"
+
+# Apply only to low-confidence neutrals
 
 neutral_mask = (df["roberta_sentiment"] == "neutral") & (df["sent_score"] < 0.85)
 df.loc[neutral_mask, "zero_shot_sentiment"] = df.loc[neutral_mask, "clean_en"].apply(classify_sentiment_zs)
@@ -185,6 +189,18 @@ def classify_purchase_zs(text):
         return "unknown"
 
 df["purchase_intent_zs"] = df["clean_en"].apply(classify_purchase_zs)
+
+##  Weighted Net Sentiment
+
+#Calculate weighted sentiment using likes as engagement weight.
+
+df["weight"] = np.sqrt(df["likes"].fillna(0) + 1)
+sent_val_map = {"positive": 1, "neutral": 0, "negative": -1}
+df["sent_val"] = df["final_sentiment"].map(sent_val_map)
+weighted_net = (df["sent_val"] * df["weight"]).sum() / df["weight"].sum()
+
+print(f"\n Weighted Net Sentiment: {weighted_net:.3f}")
+
 
 print("\\nFINAL SUMMARY:")
 print("\\nSentiment counts:\\n", df["final_sentiment"].value_counts())
