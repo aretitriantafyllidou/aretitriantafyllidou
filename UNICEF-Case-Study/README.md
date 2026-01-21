@@ -1,6 +1,5 @@
 # Social Media Engagement Analysis for UNICEF NL
 
-**Goal**  
 This project analyzes 1,645 social media posts from UNICEF Netherlands to identify the key factors driving audience engagement by combining text and image analytics with machine learning. We provide actionable insights to optimize content strategy across Facebook and Instagram
 
 ---
