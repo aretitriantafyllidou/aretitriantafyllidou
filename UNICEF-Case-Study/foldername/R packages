@@ -1,0 +1,49 @@
+#  R Package Installation
+# this script is  to install all required R packages
+
+# List of required packages
+packages <- c(
+  # Data manipulation
+  "dplyr",
+  "tidyr",
+  "readr",
+  "purrr",
+  
+  # Text analysis
+  "tidytext",
+  "stringr",
+  "SnowballC",
+  "syuzhet",
+  
+  # Time series
+  "lubridate",
+  "zoo",
+  
+  # Machine learning
+  "caret",
+  "randomForest",
+  
+  # Visualization
+  "ggplot2",
+  
+  # Statistical analysis
+  "scales",
+  "DescTools",
+  
+  # Reporting
+  "stargazer"
+)
+
+# Function to install missing packages
+install_if_missing <- function(package) {
+  if (!require(package, character.only = TRUE)) {
+    install.packages(package, dependencies = TRUE)
+    library(package, character.only = TRUE)
+    cat(" Installed:", package, "\n")
+  } else {
+    cat("Already installed:", package, "\n")
+  }
+}
+
+# Install all packages
+invisible(sapply(packages, install_if_missing))
