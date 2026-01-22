@@ -1,23 +1,38 @@
-# OS
-.DS_Store
+# Data files (privacy)
+data/*.csv
+data/*.xlsx
+data/*.xls
+data/downloaded_media/
+*.csv
+*.xlsx
+
+# R
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
 
 # Python
 __pycache__/
 *.pyc
-.venv/
-env/
+*.pyo
+.env
 venv/
+env/
 
-# Jupyter
-.ipynb_checkpoints/
+# OS
+.DS_Store
+Thumbs.db
 
-# Credentials
-*.env
-config.ini
-*.pem
-*.key
+# IDE
+.vscode/
+.idea/
 
-# Data (keep only sample_data)
-data/
-*.csv
-!Thesis-ESG-Advertising/sample_data/synthetic_ads.csv
+# Google Cloud credentials
+*.json
+credentials/
+
+# Output files
+results/*.png
+results/*.jpg
+results/*.pdf
