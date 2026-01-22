@@ -1,3 +1,9 @@
+
+
+#UNICEF Social Media Image Collection
+#Downloads images from social media posts and extracts dominant colors using Google Vision API
+
+
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
@@ -7,10 +13,6 @@ import os
 file_path = "/Users/aretitriantafyllidou/Desktop/Masters/block 3/data files/social_media_postings.csv"  # Replace with your file path
 data = pd.read_csv(file_path)
 
-
-
-
-# Ensure the target directory for saving media exists
 new_directory = "downloaded_media_2"
 os.makedirs(new_directory, exist_ok=True)  # Create "downloaded_media_2" folder if it doesn't exist
 
@@ -32,7 +34,7 @@ def download_image_or_video(url, platform, index):
             print(f"Unsupported platform: {platform}")
             return None  # Return None if platform is unsupported
 
-        # Fetch and save the media
+        # fetch and save the media
         media_data = requests.get(media_url).content
         file_name = f"{index}.jpg"  # Save file with index as the name
         file_path = os.path.join(new_directory, file_name)  # Save in the new directory
@@ -45,7 +47,7 @@ def download_image_or_video(url, platform, index):
         return None  # Return None if the download fails
 
 
-# Iterate over rows and process each link
+# we do rows and process each link
 for index, row in data.iterrows():
     platform = row['network']
     link = row['link']
@@ -55,7 +57,7 @@ for index, row in data.iterrows():
     else:
         data.at[index, "photo_file"] = "NA"  # Mark as NA if download failed
 
-# Save the updated dataset to a new CSV file
+# save dataset
 output_file_path = "/Users/aretitriantafyllidou/Desktop/Masters/block 3/data files/social_media_postings_with_photos.csv"
 data.to_csv(output_file_path, index=False)
 print(f"Updated dataset saved to {output_file_path}")
