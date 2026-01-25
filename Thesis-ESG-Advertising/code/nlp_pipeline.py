@@ -13,8 +13,6 @@ import seaborn as sns
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 DetectorFactory.seed = 0
 
-
-
 #data
 df = pd.read_csv("campaign_comments.csv")
 
@@ -192,23 +190,15 @@ df["purchase_intent_zs"] = df["clean_en"].apply(classify_purchase_zs)
 
 ##  Weighted Net Sentiment
 
-#Calculate weighted sentiment using likes as engagement weight.
+# weighted sentiment using likes as engagement weight.
 
 df["weight"] = np.sqrt(df["likes"].fillna(0) + 1)
 sent_val_map = {"positive": 1, "neutral": 0, "negative": -1}
 df["sent_val"] = df["final_sentiment"].map(sent_val_map)
 weighted_net = (df["sent_val"] * df["weight"]).sum() / df["weight"].sum()
-
 print(f"\n Weighted Net Sentiment: {weighted_net:.3f}")
 
-
-print("\\nFINAL SUMMARY:")
-print("\\nSentiment counts:\\n", df["final_sentiment"].value_counts())
-print("\\nWeighted Net Sentiment:", round(float(weighted_net), 3))
-print("\\nPurchase Intent (keywords):\\n", df["purchase_intent_keywords"].value_counts())
-print("\\nPurchase Intent (zero-shot):\\n", df["purchase_intent_zs"].value_counts())
-
 df.to_csv(OUTPUT_CSV, index=False)
-print(f"\\nSaved: {OUTPUT_CSV}")
+
 
 
