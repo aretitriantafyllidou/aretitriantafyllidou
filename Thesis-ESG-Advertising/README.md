@@ -21,28 +21,24 @@ This analysis applies data science, machine learning and finance techniques in r
 - Cross-sectional Regressions & Hypothesis Testing (OLS, ANOVA)  
 - Visualization of Campaign Outcomes 
 
----
-
 
 ### Tools & Tech Stack
-Python (Pandas, Scikit-learn, Transformers – RoBERTa, BART) — preprocessing, feature engineering, and machine learning modeling.  
-R (quantmod, lm, eventstudies) — econometric modeling, robust regression, and event study analysis.  
-APIs (YouTube, Twitter) · yfinance — social media and financial data collection.  
-NLP · Sentiment Analysis · Zero-shot Classification · Event Study Analysis — methods used for text classification and campaign impact evaluation.
+- Python (Pandas, Scikit-learn, Transformers – RoBERTa, BART) — preprocessing, feature engineering, and machine learning modeling.  
+- R (quantmod, lm, eventstudies) — econometric modeling, robust regression, and event study analysis.  
+- APIs (YouTube, Twitter) · yfinance — social media and financial data collection.  
+- NLP · Sentiment Analysis · Zero-shot Classification · Event Study Analysis — methods used for text classification and campaign impact evaluation.
 
----
 
 ###  Highlights
 
 **Results summary:**  
-Environmental campaigns generally received the most positive public sentiment.  
-Governance messages tended to trigger higher skepticism.  
-ESG advertising had no short-term stock impact, but authenticity strongly influenced consumer trust
+- Environmental campaigns generally received the most positive public sentiment.  
+- Governance messages tended to trigger higher skepticism.  
+- ESG advertising had no short-term stock impact, but authenticity strongly influenced consumer trust
 
 
 ###  Data Collection
-Public engagement data were scraped from YouTube and Twitter campaigns through a combination of official APIs and automated collection tools.  
-All comments were anonymized and aggregated to ensure privacy.  
+Public engagement data were scraped from YouTube and Twitter campaigns through a combination of official APIs and automated collection tools. All comments were anonymized and aggregated to ensure privacy.  
 
 ---
 
