@@ -1,4 +1,4 @@
-#  ESG Communication, Trust & Financial Performance
+#  ESG Communication, Trust and Financial Performance
 
 **Master’s Thesis – Erasmus University Rotterdam (2025)**  
 **Author:** Areti Triantafyllidou  
@@ -49,7 +49,6 @@ All comments were anonymized and aggregated to ensure privacy.
 ###  Repository Guide
  [`Areti Triantafyllidou Thesis.pdf`](Areti%20Triantafyllidou%20Thesis.pdf) – Full thesis document  
  `/code/` → Python and R scripts for NLP, sentiment, and econometrics  
- `/figures/` → Sentiment and CAR/BHAR visualizations  
  `/sample_data/` → Synthetic examples (real ad data confidential)  
 
 >  *All advertising data are anonymized or synthetic. Real datasets are not shared for confidentiality reasons.*
