@@ -1,4 +1,4 @@
-# Predicting Obesity Levels Using Machine Learning methods
+# Predicting obesity levels using machine learning methods
 
 
 In this project, I used machine learning project to analyze health and lifestyle data to predict obesity levels using supervised learning algorithms such as Random Forest, Support Vector Machines, and Conditional Inference Trees.
@@ -13,7 +13,9 @@ It addresses the research question:
 - Dietary habits (vegetable intake, fast food consumption) consistently ranked as critical factors
 - Gender differences were observed, with females showing lower obesity risk at younger ages
 
-Dataset Source: Kaggle - Obesity Dataset
+##  Dataset
+The data used in this project is available on Kaggle:
+[Obesity Dataset](https://www.kaggle.com/datasets/suleymansulak/obesity-dataset)
 
 ### Methodology
 - Data Preprocessing and cleaning
