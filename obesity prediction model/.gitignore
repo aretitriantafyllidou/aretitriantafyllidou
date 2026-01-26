@@ -1,0 +1,68 @@
+# R specific files
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+
+# RStudio files
+.Rproj.user/
+
+# Temporary files
+*~
+*.swp
+*.swo
+*~
+
+# R Environment Variables
+.Renviron
+
+# Session Data
+.RData
+
+# User-specific files
+.Ruserdata
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# R Environment Variables
+.Renviron
+
+# pkgdown site
+docs/
+
+# translation temp files
+po/*~
+
+# Output files
+*.log
+*.pdf
+*.html
+
+# Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Large data files (uncomment if needed)
+# *.csv
+# *.xlsx
+# *.xls
+
+# Model files (if saving trained models)
+*.rds
+*.RDS
+
+# Plots and figures 
+# plots/
+# figures/
