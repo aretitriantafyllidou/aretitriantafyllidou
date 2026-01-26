@@ -1,0 +1,48 @@
+# R Package Requirements for Obesity Prediction Project
+
+## Core Data Manipulation and Visualization
+dplyr
+ggplot2
+tidyr
+readxl
+
+## Machine Learning Libraries
+caret
+randomForest
+e1071
+partykit
+rpart
+
+## Model Interpretability
+iml
+pdp
+
+## Additional Utilities
+corrplot
+patchwork
+
+## Installation Instructions
+
+### Install all packages at once 
+install.packages(c(
+  "dplyr",
+  "ggplot2", 
+  "tidyr",
+  "readxl",
+  "caret",
+  "randomForest",
+  "e1071",
+  "partykit",
+  "rpart",
+  "iml",
+  "pdp",
+  "corrplot",
+  "patchwork"
+))
+
+### or individually like
+install.packages("dplyr")
+# ... etc
+
+## R Version
+Recommended R version: 4.0 or higher
