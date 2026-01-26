@@ -34,7 +34,7 @@ In this group project we had to analyze 1,645 social media posts from UNICEF Net
 
 **Repository Guide**  
 -  `docs/` → [Slides (PDF)](../docs/UNICEF_presentation.pdf) • [Final Report (PDF)](../docs/UnicefReport.pdf)  
-- `code/` → R/Python scripts for data prep, feature engineering, and modeling  
+- `scripts/` → R/Python scripts for data prep, feature engineering, and modeling  
 
 >  Note: Dataset is not included in this repository due to privacy considerations.
 
