@@ -13,9 +13,9 @@ I’m a recent graduate in Data Science and Marketing Analytics, based in the Ne
 
 **Title:** The impact of ESG advertising on consumer perception and brand trust  
 
-**Summary:**  For my Master’s thesis, I investigated how Environmental, Social, and Governance(ESG) related advertising affects public sentiment in social media and stock market performance. The analysis was conducted using social media and financial data I collected by myself using APIs and authetication keys. 
+**Summary:**  For my Master’s thesis, I investigated how Environmental, Social, and Governance(ESG) related advertising affects public sentiment in social media and stock market performance. I independently collected social media and financial data using APIs and authentication keys, integrating multiple data sources for comprehensive analysis. Using sentiment analysis and event study methodology, I analyzed the relationship between ESG-related marketing campaigns and both consumer perception and financial outcomes. The research combined natural language processing of social media content with financial modeling to assess whether ESG advertising translates into measurable market value and brand trust.
 
-**Tools & Methods:**  Python · R · API Integration · Event Study Analysis · Machine Learning · Sentiment Analysis · NLP · Financial Modelling
+**Tools & Methods:**  Python · R · API Integration · Event Study Analysis · Machine Learning · Sentiment Analysis · NLP · Financial Modelling · Time Series Analysis · Statistical Analysis
 
 
  [View folder →](./Thesis-ESG-Advertising)
@@ -23,9 +23,17 @@ I’m a recent graduate in Data Science and Marketing Analytics, based in the Ne
 
 ### UNICEF Social Media Case Study
 
-This was a two-month case study in collaboration with UNICEF, using real social media data that organization provided to our team.
-We analyzed social media content and engagement to see which posts perform best and how they are perceived across different platforms. Some topics that we focused on were image color schemes, captions, messaging, and user engagement data.
-Based on the analysis, we presented and proposed recommendations on how UNICEF could strengthen and optimize its social media.
+### Optimizing Social Media Engagement for UNICEF Netherlands
+
+**Title:** The impact of ESG advertising on consumer perception and brand trust  
+
+**Summary:**  In this two month collaborative project, our team worked directly with UNICEF Netherlands analyzing 1,645 real social media posts from Facebook, Instagram and Tik Tok to capture patterns that drive the most enagement. We combined text analytics, sentiment analysis, image analysis using Google Vision API, and machine learning (Random Forest models) to determine which content characteristics maximize reactions, comments, and shares. Our findings and strategic recommendations were presented directly to UNICEF NL's marketing team to optimize their social media strategy.
+
+**Tools & Methods:** Python · R · Random Forest · Linear Regression · NLP · Sentiment Analysis · Google Vision API · Web Scraping · Image Analytics · Statistical Analysis · Stakeholder Presentation
+
+
+ [View folder →](./UNICEF-Case-Study)
+
 
 ### Music Streaming Analytics Project
 
