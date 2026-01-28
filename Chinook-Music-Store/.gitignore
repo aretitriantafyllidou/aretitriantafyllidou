@@ -1,0 +1,19 @@
+# Power BI temporary files
+*.pbix.tmp
+*.pbix~
+
+# SQL Server temporary files
+*.bak~
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Sensitive data (if any)
+**/connection_strings.txt
+**/passwords.txt
