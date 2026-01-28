@@ -14,16 +14,14 @@ DROP TABLE IF EXISTS ChinookStaging.dbo.Genre;
 DROP TABLE IF EXISTS ChinookStaging.dbo.MediaType;
 
 
---1. get data FROM Artist
---  ArtistID,   Name
+--get data FROM Artist ( ArtistID, Name)
 
 
 SELECT ArtistID, Chinook.[dbo].Artist.Name as ArtistName
 INTO ChinookStaging.dbo.[Artist]
 FROM Chinook.[dbo].[Artist]
 
---2. get data FROM Album
---  AlbumID,   Title, ArtistId
+-- data FROM Album like  AlbumID, Title, ArtistId
 
 SELECT AlbumID, Chinook.[dbo].Album.Title as AlbumName, Chinook.[dbo].Album.ArtistId
 INTO ChinookStaging.dbo.[Album]
@@ -31,16 +29,13 @@ FROM Chinook.[dbo].[Album]
 INNER JOIN Chinook.[dbo].Artist
     ON Chinook.[dbo].Artist.ArtistId = Chinook.[dbo].Album.ArtistId
 
---3. get data FROM Genre
---  GenreID,   Name
+--get data FROM Genre like  GenreID, Name
 
 SELECT GenreID, Chinook.[dbo].Genre.Name as GenreName
 INTO ChinookStaging.dbo.[Genre]
 FROM Chinook.[dbo].[Genre]
 
---4. get data FROM MediaType
---  GenreID,   Name
-
+-- data FROM MediaType like GenreID,Name
 
 SELECT MediaTypeID, Chinook.[dbo].MediaType.Name as MediaTypeName
 INTO ChinookStaging.dbo.[MediaType]
@@ -48,16 +43,14 @@ FROM Chinook.[dbo].[MediaType]
 
 
 
---5 get FROM Customer
---Customer
--- CustomerID, Company, FirstName, LastName, City, PostalCode, Country
+--5 get FROM Customer like CustomerID, Company, FirstName, LastName, City, PostalCode, Country
 
 SELECT  CustomerID, Company, FirstName, LastName, City, PostalCode, Country
 INTO ChinookStaging.dbo.Customer
 FROM Chinook.[dbo].Customer
 
---6  get FROM Track
- -- TrackID, Name, AlmumID, CompanyName, CategoryName
+--get FROM Track
+-- TrackID, Name, AlmumID, CompanyName, CategoryName
 
 SELECT  TrackId, Chinook.[dbo].Track.Name as TrackName  , Chinook.[dbo].album.AlbumId, Chinook.[dbo].mediaType.MediaTypeId,
 Chinook.[dbo].Genre.GenreId, UnitPrice
@@ -105,3 +98,4 @@ INNER JOIN Chinook.[dbo].[Artist] art
     ON a.ArtistId = art.ArtistId
 INNER JOIN Chinook.[dbo].[Customer] c
     ON i.CustomerID = c.Customerid;
+
