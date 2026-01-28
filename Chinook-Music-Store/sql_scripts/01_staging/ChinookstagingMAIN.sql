@@ -12,8 +12,7 @@ DROP TABLE IF EXISTS ChinookStaging.dbo.Invoice;
 DROP TABLE IF EXISTS ChinookStaging.dbo.DimDate;
 
 
---1. get data FROM Artist
---  ArtistID,   Name
+-- get data FROM Artist like  ArtistID,   Name
 
 
 SELECT ArtistID, Chinook.[dbo].Artist.Name as ArtistName
@@ -21,16 +20,13 @@ INTO ChinookStaging.dbo.[Artist]
 FROM Chinook.[dbo].[Artist]
 
 
---2 get FROM Customer
---Customer
--- CustomerID, Company, FirstName, LastName, City, PostalCode, Country
+-- FROM Customer like CustomerID, Company, FirstName, LastName, City, PostalCode, Country
 
 SELECT  CustomerID, Company, FirstName, LastName, City, PostalCode, Country
 INTO ChinookStaging.dbo.Customer
 FROM Chinook.[dbo].Customer
 
---3  get FROM Track
- -- TrackID, Name, AlmumID, CompanyName, CategoryName
+--get FROM Track like TrackID, Name, AlmumID, CompanyName, CategoryName
 
 SELECT  TrackId, Chinook.[dbo].Track.Name as TrackName  , Chinook.[dbo].album.AlbumId, Chinook.[dbo].mediaType.MediaTypeId,
 Chinook.[dbo].Genre.GenreId, UnitPrice
@@ -44,7 +40,7 @@ INNER JOIN Chinook.[dbo].Genre
     ON Chinook.[dbo].Track.Genreid = Chinook.[dbo].Genre.GenreId
 
 
---4  get FROM Invoice
+--FROM Invoice
 -- InvoiceID,  CustomerId(join from customers), InvoiceDate, Billing-adress, city, state, country, postal code-, Total
 --Get from InvoiceLine
 --InvoiceLineID,  TrackID(Join from track), InvoiceID(join from invoice), UnitPrice, Quantity
@@ -72,3 +68,4 @@ INNER JOIN Chinook.[dbo].Track
     ON chinook.[dbo].InvoiceLine.Trackid= Chinook.[dbo].Track.Trackid
 INNER JOIN Chinook.[dbo].Customer
     ON chinook.[dbo].Invoice.CustomerID=chinook.[dbo].Customer.Customerid;
+
