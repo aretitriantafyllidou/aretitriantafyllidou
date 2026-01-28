@@ -55,7 +55,7 @@ CREATE TABLE DimMediaType (
     RowChangeReason VARCHAR(200) NULL
 );
 
--- DimCustomer dimension will need to include:
+-- DimCustomer include:
 CREATE TABLE DimCustomer(
     CustomerKey INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     CustomerID int NOT NULL, 
@@ -72,7 +72,7 @@ CREATE TABLE DimCustomer(
 );
 
 
--- DimTrack dimension will need to include:
+-- DimTrack dimension  include
 CREATE TABLE DimTrack(
     TrackKey INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     TrackID INT NOT NULL,
@@ -94,8 +94,6 @@ CREATE TABLE DimTrack(
 );
 
 
---
-
 
 CREATE TABLE FactInvoice(
      InvoiceKey INT NOT NULL ,
@@ -111,3 +109,4 @@ CREATE TABLE FactInvoice(
      FOREIGN KEY (TrackKey) REFERENCES DimTrack(TrackKey),
      FOREIGN KEY (ArtistKey) REFERENCES DimArtist(ArtistKey)
 );
+
