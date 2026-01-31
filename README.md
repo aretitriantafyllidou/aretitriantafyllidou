@@ -20,7 +20,7 @@ I’m a recent graduate in Data Science and Marketing Analytics, based in the Ne
 
  [View folder →](./Thesis-ESG-Advertising)
 
-
+---
 ### UNICEF Social Media Case Study
 
 ### Optimizing Social Media Engagement for UNICEF Netherlands
@@ -34,11 +34,22 @@ I’m a recent graduate in Data Science and Marketing Analytics, based in the Ne
 
  [View folder →](./UNICEF-Case-Study)
 
+---
+### Chinook Music Store Data Warehouse
 
-### Music Streaming Analytics Project
+### Building an ETL Pipeline for Music Retail Analytics
 
-This project was part of a two-month program following coursework in Data Engineering and Business Intelligence. As a final assignment, we worked on a self-directed project in collaboration with a company in the music streaming industry, using large-scale music consumption data, using SQL for data preparation and querying and Power BI for visualization. The results were presented through interactive dashboards and data-driven insights
+**Title:** End-to-End Data Warehouse Implementation with Dimensional Modeling and Business Intelligence Integration
 
+**Summary:** In this data engineering project, our team designed and built a data warehouse for a digital music store, transforming operational data into an analytical platform. Working with the Chinook database we implemented a complete ETL pipeline following Kimball dimensional modeling methodology. The project features a star schema with 7 dimension tables and 1 fact table, including advanced techniques like Slowly Changing Dimensions (SCD Type 2) for historical customer tracking and a date dimension spanning 990+ years. Thge final step of the project was to create interactive Power BI dashboards to enable sales performance analysis, customer behavior insights. 
+
+**Tools & Methods:** SQL Server · Power BI · ETL Development · Star Schema Design · Dimensional Modeling · SCD Type 2 · Foreign Key Constraints · Business Intelligence · Dashboard Development
+
+**Certification:** ReGeneration Academy - Business Intelligence & Data Engineering (100-hour program, Nov 2023 - Jan 2024)
+
+[View folder →](./Chinook-Music-Store)
+
+---
 ###  Predicting Obesity Levels (Machine Learning Project)
 
 **Title**: Predicting Obesity Levels Using Machine Learning Methods
@@ -49,7 +60,7 @@ This project was part of a two-month program following coursework in Data Engine
 
 [View folder →](./obesity%20prediction%20model)
 
-
+---
 
 📫 **Connect with me:**  
 [LinkedIn](https://www.linkedin.com/in/areti-triantafyllidou/) | [Email](mailto:areti.triantafullidou@gmail.com)
