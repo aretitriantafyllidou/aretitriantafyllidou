@@ -1,21 +1,14 @@
 # 05_utilities - Date Dimension & Helper Scripts
 
 ## Purpose
-Generate comprehensive date dimension table for temporal analysis.
+This script generates a date dimension table for temporal analysis.
 
 ## Scripts
 
-### ⭐ DimDate.sql (RECOMMENDED - formerly SQLQuery5.sql)
-- **Use this one**: Comprehensive date dimension generator
+###  DimDate.sql 
 - Creates `DimDate` table in `ChinookDW` database
 - **Date Range**: 2009-01-01 to 2999-12-31 (990+ years)
 - **Attributes**: 30+ calculated fields
-
-### DimDate__4_.sql (Alternative)
-- Similar implementation
-- Use DimDate.sql for consistency
-
-## What It Creates
 
 ### Date Dimension Table Structure
 
@@ -84,21 +77,13 @@ GROUP BY d.HolidayUSA;
 ```
 
 ## Execution Order
-1. Warehouse structure must exist (`02_warehouse`)
+1. Warehouse structure must exist (02_warehouse)
 2. Run **DimDate.sql** (can be run anytime after warehouse creation)
 3. This is **optional** but highly recommended for temporal analysis
 
-## Performance Notes
-- Script uses WHILE loop to generate dates
-- Takes ~30-60 seconds to populate 990 years of dates
-- Generates ~361,000+ date records
-- Creates holiday flags dynamically
-
 ## Customization
 You can modify:
-- **Date range**: Change `@StartDate` and `@EndDate` variables (lines 10-11)
+- **Date range**: Change `@StartDate` and `@EndDate` variables 
 - **Holidays**: Add/remove holidays by modifying UPDATE statements (lines 243-456)
 - **Fiscal year**: Add custom fiscal period logic if needed
 
-## Next Step
-Date dimension is ready! Proceed to load data (`03_load`) or connect Power BI.
