@@ -1,14 +1,10 @@
--- ============================================
 -- SAMPLE ANALYTICAL QUERIES
 -- Chinook Data Warehouse
--- ============================================
 
 USE ChinookDW;
 GO
 
--- ============================================
--- 1. TOP REVENUE ANALYSIS
--- ============================================
+--  TOP REVENUE ANALYSIS
 
 -- Top 10 Artists by Revenue
 SELECT TOP 10
@@ -35,10 +31,7 @@ INNER JOIN DimArtist a ON alb.ArtistKey = a.ArtistKey
 GROUP BY alb.AlbumName, a.ArtistName
 ORDER BY TotalRevenue DESC;
 
--- ============================================
--- 2. GEOGRAPHIC ANALYSIS
--- ============================================
-
+--  GEOGRAPHIC ANALYSIS
 -- Revenue by Country
 SELECT 
     c.CustomerCountry,
@@ -64,9 +57,7 @@ WHERE c.RowIsCurrent = 1
 GROUP BY c.CustomerCity, c.CustomerCountry
 ORDER BY TotalRevenue DESC;
 
--- ============================================
--- 3. PRODUCT ANALYSIS
--- ============================================
+--  PRODUCT ANALYSIS
 
 -- Genre Popularity and Revenue
 SELECT 
@@ -107,9 +98,7 @@ INNER JOIN DimArtist a ON alb.ArtistKey = a.ArtistKey
 GROUP BY t.TrackName, a.ArtistName, alb.AlbumName
 ORDER BY TimesSold DESC;
 
--- ============================================
--- 4. TIME-SERIES ANALYSIS
--- ============================================
+--  TIME SERIES ANALYSIS
 
 -- Monthly Sales Trend
 SELECT 
@@ -138,7 +127,7 @@ GROUP BY
     DATEPART(QUARTER, CAST(CAST(InvoiceDateKey AS VARCHAR(8)) AS DATE))
 ORDER BY Year, Quarter;
 
--- Year-over-Year Growth
+-- Year over Year Growth
 WITH YearlyRevenue AS (
     SELECT 
         YEAR(CAST(CAST(InvoiceDateKey AS VARCHAR(8)) AS DATE)) as Year,
@@ -159,9 +148,7 @@ SELECT
 FROM YearlyRevenue
 ORDER BY Year;
 
--- ============================================
--- 5. CUSTOMER ANALYSIS
--- ============================================
+-- CUSTOMER ANALYSIS
 
 -- High-Value Customers (Top 20)
 SELECT TOP 20
@@ -215,9 +202,7 @@ ORDER BY
         ELSE 4
     END;
 
--- ============================================
--- 6. SCD TYPE 2 DEMO
--- ============================================
+--  SCD TYPE 2 DEMO
 
 -- Customer History (showing address changes)
 SELECT 
@@ -255,10 +240,7 @@ SELECT
 FROM DimCustomer
 GROUP BY RowIsCurrent;
 
--- ============================================
--- 7. ARTIST-ALBUM-TRACK DRILL-DOWN
--- ============================================
-
+--  ARTIST-ALBUM-TRACK DRILL-DOWN
 -- Complete drill-down analysis
 SELECT 
     art.ArtistName,
@@ -280,10 +262,7 @@ WHERE art.RowIsCurrent = 1
 GROUP BY art.ArtistName, alb.AlbumName, t.TrackName, g.GenreName, m.MediaTypeName
 ORDER BY TotalRevenue DESC;
 
--- ============================================
--- 8. BUSINESS INSIGHTS
--- ============================================
-
+--  INSIGHTS
 -- Average Order Value Over Time
 SELECT 
     YEAR(CAST(CAST(InvoiceDateKey AS VARCHAR(8)) AS DATE)) as Year,
@@ -299,7 +278,7 @@ FROM (
 GROUP BY YEAR(CAST(CAST(InvoiceDateKey AS VARCHAR(8)) AS DATE))
 ORDER BY Year;
 
--- Revenue Concentration (Pareto Analysis)
+-- Revenue Concentration
 WITH ArtistRevenue AS (
     SELECT 
         a.ArtistName,
@@ -333,10 +312,7 @@ GROUP BY c.CustomerCountry, g.GenreName
 HAVING ROW_NUMBER() OVER (PARTITION BY c.CustomerCountry ORDER BY SUM(f.Total) DESC) <= 3
 ORDER BY c.CustomerCountry, Rank;
 
--- ============================================
--- 9. DATA QUALITY CHECKS
--- ============================================
-
+--  CHECKS
 -- Check for NULL values in fact table
 SELECT 
     'InvoiceKey' as ColumnName,
@@ -374,9 +350,7 @@ FROM FactInvoice f
 LEFT JOIN DimArtist a ON f.ArtistKey = a.ArtistKey
 WHERE a.ArtistKey IS NULL;
 
--- ============================================
--- 10. SUMMARY STATISTICS
--- ============================================
+--  STATISTICS
 
 -- Overall warehouse statistics
 SELECT 
